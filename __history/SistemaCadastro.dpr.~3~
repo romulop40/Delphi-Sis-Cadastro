@@ -1,0 +1,14 @@
+program SistemaCadastro;
+
+uses
+  Vcl.Forms,
+  Contato in 'Contato.pas' {FrmCadastro};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmCadastro, FrmCadastro);
+  Application.Run;
+end.
